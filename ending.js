@@ -20,6 +20,9 @@ function drawEnding() {
 
   textSize(16);
   text("Click or press R to restart", width / 2, height / 2 + 80);
+
+  // reset cursor
+  cursor(ARROW);
 }
 
 function endingMousePressed() {
