@@ -6,7 +6,7 @@ function drawEnding() {
 
   let endingText = "";
 
-  if (stress >= 2 && energy <= 0) {
+  if (stress >= 3) {
     endingText = "You did everything.\nYou were there for none of it.";
   } else if (connection >= 1 && stress <= 1) {
     endingText = "The day mattered because someone else did.";
