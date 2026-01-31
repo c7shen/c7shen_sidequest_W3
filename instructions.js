@@ -31,7 +31,7 @@ function drawInstr() {
     "Click buttons or use number keys (1,2,3 correspondingly).";
 
   textAlign(CENTER, TOP);
-  text(lines, width / 2, 160, 600);
+  text(lines, width / 2, 160, 650);
 
   // ---- Back button ----
   // This button lets the player return to the start screen
