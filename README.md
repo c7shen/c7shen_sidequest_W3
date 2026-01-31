@@ -15,6 +15,7 @@ Side Quest Week 3: One Day Left Interactive Story
 ## Interaction Instructions
 
 - Click INSTRUCTION button or press 'i' to read instruction
+- Click BACK button or press 'b' to return to menu
 - Click START button or press 'enter' to begin
 - Read the story text on each screen
 - Make a choice by either clicking on button or pressing number keys 1, 2, 3
