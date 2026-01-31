@@ -49,6 +49,8 @@ function drawEvening() {
 // ------------------------------
 // Called from main.js when currentScreen === "evening"
 function eveningMousePressed() {
+  console.log("Evening mouse pressed");
+
   if (isHover({ x: 400, y: 360, w: 340, h: 70 })) {
     // Reflect / journal
     clarity++;
