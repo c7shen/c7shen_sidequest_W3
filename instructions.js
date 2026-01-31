@@ -28,7 +28,8 @@ function drawInstr() {
   const lines =
     "Make choices throughout the day.\n" +
     "Your decisions affect how the story ends.\n\n" +
-    "Click buttons or use number keys (1,2,3 correspondingly).";
+    "Click buttons or use number keys.\n" +
+    "(1,2,3 correspondingly)";
 
   textAlign(CENTER, TOP);
   text(lines, width / 2, 160, 650);
