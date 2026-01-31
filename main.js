@@ -2,7 +2,7 @@
 // main.js = the “router” (traffic controller) for the whole game
 // ------------------------------------------------------------
 //
-// Idea: this project has multiple screens (start, instructions, game, win, lose).
+// Idea: this project has multiple screens (start, instructions, morning, afternoon, evening, ending).
 // Instead of putting everything in one giant file, each screen lives in its own
 // file and defines two main things:
 //   1) drawX()         → how that screen looks
