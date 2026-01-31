@@ -23,7 +23,7 @@
 // Only one screen should be active at a time.
 console.log("main.js loaded");
 
-let currentScreen = "start"; // start | instr | morning | afternoon | evening | night | ending
+let currentScreen = "start"; // start | instr | morning | afternoon | evening | ending
 
 let stress = 0;
 let energy = 0;
@@ -51,16 +51,16 @@ function draw() {
   // Each screen file defines its own draw function:
   //   start.js         → drawStart()
   //   instructions.js  → drawInstr()
-  //   game.js          → drawGame()
-  //   win.js           → drawWin()
-  //   lose.js          → drawLose()
+  //   morning.js          → drawMorning()
+  //   afternoon.js           → drawAfternoon()
+  //   evening.js          → drawEvening()
+  //   ending.js          → drawEnding()
 
   if (currentScreen === "start") drawStart();
   else if (currentScreen === "instr") drawInstr();
   else if (currentScreen === "morning") drawMorning();
   else if (currentScreen === "afternoon") drawAfternoon();
   else if (currentScreen === "evening") drawEvening();
-  else if (currentScreen === "night") drawNight();
   else if (currentScreen === "ending") drawEnding();
 
   // (Optional teaching note)
@@ -81,7 +81,6 @@ function mousePressed() {
   // morning.js          → morningMousePressed()
   // afternoon.js           → afternoonMousePressed()
   // evening.js          → eveningMousePressed()
-  // night.js          → nightMousePressed()
   // ending.js          → endingMousePressed()
 
   if (currentScreen === "start") startMousePressed();
@@ -89,7 +88,6 @@ function mousePressed() {
   else if (currentScreen === "morning") morningMousePressed();
   else if (currentScreen === "afternoon") afternoonMousePressed();
   else if (currentScreen === "evening") eveningMousePressed();
-  else if (currentScreen === "night") nightMousePressed();
   else if (currentScreen === "ending") endingMousePressed();
 }
 
@@ -104,7 +102,6 @@ function keyPressed() {
   // morning.js          → morningKeyPressed()
   // afternoon.js           → afternoonKeyPressed()
   // evening.js          → eveningKeyPressed()
-  // night.js          → nightKeyPressed()
   // ending.js          → endingKeyPressed()
 
   if (currentScreen === "start") startKeyPressed();
@@ -112,7 +109,6 @@ function keyPressed() {
   else if (currentScreen === "morning") morningKeyPressed();
   else if (currentScreen === "afternoon") afternoonKeyPressed();
   else if (currentScreen === "evening") eveningKeyPressed();
-  else if (currentScreen === "night") nightKeyPressed();
   else if (currentScreen === "ending") endingKeyPressed();
 }
 

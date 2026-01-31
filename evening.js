@@ -53,17 +53,17 @@ function eveningMousePressed() {
     // Reflect / journal
     clarity++;
     stress--;
-    currentScreen = "night";
+    currentScreen = "ending";
   } else if (isHover({ x: 400, y: 460, w: 340, h: 70 })) {
     // Scroll endlessly
     clarity--;
     energy--;
-    currentScreen = "night";
+    currentScreen = "ending";
   } else if (isHover({ x: 400, y: 560, w: 340, h: 70 })) {
     // Prepare for tomorrow
     stress++;
     clarity++;
-    currentScreen = "night";
+    currentScreen = "ending";
   }
 }
 
@@ -75,18 +75,18 @@ function eveningKeyPressed() {
   if (key === "1") {
     clarity++;
     stress--;
-    currentScreen = "night";
+    currentScreen = "ending";
   }
 
   if (key === "2") {
     clarity--;
     energy--;
-    currentScreen = "night";
+    currentScreen = "ending";
   }
 
   if (key === "3") {
     stress++;
     clarity++;
-    currentScreen = "night";
+    currentScreen = "ending";
   }
 }
