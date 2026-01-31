@@ -21,6 +21,8 @@
 //
 // We store the “name” of the current screen as a string.
 // Only one screen should be active at a time.
+console.log("main.js loaded");
+
 let currentScreen = "start"; // start | instr | morning | afternoon | evening | night | ending
 
 let stress = 0;
