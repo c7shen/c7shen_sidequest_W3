@@ -27,8 +27,9 @@ function drawInstr() {
   // This is useful for simple multi-line instructions
   const lines =
     "Make choices throughout the day.\n" +
-    "Your decisions affect how the story ends.\n\n" +
-    "Click buttons or use number keys 1,2,3.";
+    "Your decisions affect how the story ends.\n" +
+    "Click buttons or use number keys\n" +
+    "(1, 2, 3 correspondingly).";
 
   text(lines, width / 2, 160);
 
