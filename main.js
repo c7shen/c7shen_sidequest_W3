@@ -135,3 +135,22 @@ function isHover({ x, y, w, h }) {
     mouseY < y + h / 2 // mouse is above bottom edge
   );
 }
+
+// ------------------------------------------------------------
+// Shared UI helper: drawChoice()
+// ------------------------------------------------------------
+// Draws a clickable choice button used by story screens
+function drawChoice({ x, y, w, h, label }) {
+  rectMode(CENTER);
+
+  const hover = isHover({ x, y, w, h });
+
+  noStroke();
+  fill(hover ? color(180, 210, 255) : color(200, 225, 255));
+  rect(x, y, w, h, 14);
+
+  fill(40);
+  textAlign(CENTER, CENTER);
+  textSize(22);
+  text(label, x, y);
+}

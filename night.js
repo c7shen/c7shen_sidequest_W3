@@ -14,3 +14,7 @@ function drawNight() {
 function nightMousePressed() {
   currentScreen = "ending";
 }
+
+function nightKeyPressed() {
+  currentScreen = "ending";
+}

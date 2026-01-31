@@ -1,5 +1,6 @@
 function drawEnding() {
   background(240);
+  fill(40);
   textAlign(CENTER, CENTER);
   textSize(28);
 
@@ -15,5 +16,26 @@ function drawEnding() {
     endingText = "The day passed gently.\nSo gently you barely felt it.";
   }
 
-  text(endingText, width / 2, height / 2);
+  text(endingText, width / 2, height / 2 - 40);
+
+  textSize(16);
+  text("Click or press R to restart", width / 2, height / 2 + 80);
+}
+
+function endingMousePressed() {
+  resetGame();
+}
+
+function endingKeyPressed() {
+  if (key === "r" || key === "R") {
+    resetGame();
+  }
+}
+
+function resetGame() {
+  stress = 0;
+  energy = 0;
+  connection = 0;
+  clarity = 0;
+  currentScreen = "start";
 }
