@@ -28,10 +28,10 @@ function drawInstr() {
   const lines =
     "Make choices throughout the day.\n" +
     "Your decisions affect how the story ends.\n\n" +
-    "Click buttons or use number keys\n" +
-    "(1, 2, 3 correspondingly).";
+    "Click buttons or use number keys (1,2,3 correspondingly).";
 
-  text(lines, width / 2, 160);
+  textAlign(CENTER, TOP);
+  text(lines, width / 2, 160, 600);
 
   // ---- Back button ----
   // This button lets the player return to the start screen
